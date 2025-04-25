@@ -1,17 +1,56 @@
-Reliable Operation of Dynamic Battery and SMR System
-This repository provides files and scripts for dynamic modeling and simulation of a system integrating a Battery Energy Storage System (BESS), a Small Modular Reactor (SMR), and dynamic load behavior
-Repository Contents
-Grid_v33_B0.sav
-Saved network configuration for simulation.
+# Reliable Operation of Dynamic Battery and SMR System
 
-Modeling_v2.dyr
-Dynamic model definitions including battery and SMR behavior.
+This repository provides all necessary files and scripts for the dynamic modeling and automatic simulation of a system integrating a Battery Energy Storage System (BESS), a Small Modular Reactor (SMR), and dynamic propulsion motor load behavior.
 
-Operation_B2025.out
-Simulation output file capturing system response.
+The focus is on ensuring **reliable system operation** under dynamic conditions with **automatic model loading and execution**.
 
-Operation_Script.py
-Python script for automating simulation setup and execution.
+## Repository Contents
 
-P_motor6.csv
-CSV file containing dynamic load profile data (e.g., motor load).
+- **Grid_v33_B0.sav**  
+  Network configuration file for the system.
+
+- **Modeling_v2.dyr**  
+  Dynamic models including the battery and SMR.
+
+- **Operation_B2025.out**  
+  Simulation output results file.
+
+- **Operation_Script.py**  
+  Python script that **automatically loads** all necessary files (`.sav`, `.dyr`, and `P_motor6.csv`) and runs the simulation.
+
+- **P_motor6.csv**  
+  CSV file providing the dynamic motor load profile.
+
+## Overview
+
+The provided script (`Operation_Script.py`) handles:
+- Loading the **network model (.sav)**.
+- Loading the **dynamic model (.dyr)**.
+- Importing the **motor load profile (P_motor6.csv)**.
+- Running the simulation automatically without manual file setup.
+
+## Requirements
+
+- Python 3.x
+- Power system simulation software (e.g., **PSSE**) supporting `.sav` and `.dyr` formats
+- Python libraries:
+  - `pandas`
+  - `numpy`
+  - Simulation-specific APIs (e.g., `psspy` for PSSE)
+
+## How to Run
+
+1. Clone/download this repository.
+2. Open `Operation_Script.py`.
+3. Ensure paths to `.sav`, `.dyr`, and `.csv` are correct (if running outside the same directory).
+4. Run `Operation_Script.py`.  
+   It will **automatically load** the system files and start the simulation.
+5. Review the simulation results in `Operation_B2025.out`.
+
+## Applications
+
+- Dynamic stability analysis
+- Grid integration studies for SMR and BESS
+- Motor load impact assessments
+- Reliable operation marine energy systems under dynamic conditions
+
