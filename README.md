@@ -48,7 +48,7 @@ The provided script (`Operation_Script.py`) handles:
 ## Applications
 
 - Dynamic stability analysis
-- Grid integration studies for SMR and BESS
+- Battery Grid integration studies
 - Motor load impact assessments
-- Reliable operation marine energy systems under dynamic conditions
+- Reliable operation of marine energy systems under dynamic conditions
 
