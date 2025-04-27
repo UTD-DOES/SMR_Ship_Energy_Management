@@ -1,4 +1,4 @@
-# Reliable Operation of Dynamic Battery and SMR System
+# Reliable Operation of Dynamic Model
 
 This repository provides all necessary files and scripts for the dynamic modeling and automatic simulation of a system integrating a Battery Energy Storage System (BESS) and SMR with dynamic propulsion motor load behavior.
 
